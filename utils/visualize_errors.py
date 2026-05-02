@@ -70,6 +70,8 @@ def plot_attack_vulnerability(csv_path):
     print("✅ Đã xuất biểu đồ Attack_Vulnerability_Heatmap.png")
 
 if __name__ == "__main__":
-    # Thay đường dẫn tới file Dataset.csv của bạn
-    plot_error_distribution('../Dataset.csv')
-    plot_attack_vulnerability()
+    csv_path = r'C:\Users\GIGA\VisualStudio2022Projects\job\AI_RedTeaming_Pipeline\Dataset.csv'
+    
+    # Truyền biến csv_path vào CẢ HAI hàm
+    plot_error_distribution(csv_path)
+    plot_attack_vulnerability(csv_path)
