@@ -1,8 +1,20 @@
-requests==2.31.0
-python-dotenv==1.0.0
-tenacity==8.2.3
-pandas==2.1.4
-litellm==1.35.29
-pydantic>=2.0.0
+# --- Core API & Environment ---
+litellm>=1.35.29
+python-dotenv>=1.0.0
+requests>=2.31.0
 
-#tai them pillow
+# --- Error Handling & Resiliency ---
+tenacity>=8.2.3
+
+# --- Data Validation & Processing ---
+pydantic>=2.0.0
+jsonlines>=4.0.0
+
+# --- PDF & Image Processing ---
+PyMuPDF>=1.23.0
+Pillow>=10.0.0
+
+# --- Data Analysis & Visualization ---
+pandas>=2.1.4
+matplotlib>=3.8.0
+seaborn>=0.13.0
