@@ -1,0 +1,702 @@
+[
+    {
+        "id": "2024.acl-long.0",
+        "title": "Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.0.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.1",
+        "title": "Quantized Side Tuning: Fast and Memory-Efficient Tuning of Quantized Large Language Models",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.1.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.2",
+        "title": "Unsupervised Multimodal Clustering for Semantics Discovery in Multimodal Utterances",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.2.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.3",
+        "title": "MAGE: Machine-generated Text Detection in the Wild",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.3.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.4",
+        "title": "PrivLM-Bench: A Multi-level Privacy Evaluation Benchmark for Language Models",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.4.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.5",
+        "title": "GenTranslate: Large Language Models are Generative Multilingual Speech and Machine Translators",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.5.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.6",
+        "title": "Exploring Chain-of-Thought for Multi-modal Metaphor Detection",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.6.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.7",
+        "title": "BitDistiller: Unleashing the Potential of Sub-4-Bit LLMs via Self-Distillation",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.7.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.8",
+        "title": "A Unified Temporal Knowledge Graph Reasoning Model Towards Interpolation and Extrapolation",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.8.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.9",
+        "title": "Unsupervised Information Refinement Training of Large Language Models for Retrieval-Augmented Generation",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.9.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.10",
+        "title": "CSCD-NS: a Chinese Spelling Check Dataset for Native Speakers",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.10.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.11",
+        "title": "Evaluating Dynamic Topic Models",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.11.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.12",
+        "title": "How Abilities in Large Language Models are Affected by Supervised Fine-tuning Data Composition",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.12.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.13",
+        "title": "Through the Lens of Split Vote: Exploring Disagreement, Difficulty and Calibration in Legal Case Outcome Classification",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.13.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.14",
+        "title": "Inference to the Best Explanation in Large Language Models",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.14.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.15",
+        "title": "A Novel Cartography-Based Curriculum Learning Method Applied on RoNLI: The First Romanian Natural Language Inference Corpus",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.15.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.16",
+        "title": "MinPrompt: Graph-based Minimal Prompt Data Augmentation for Few-shot Question Answering",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.16.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.17",
+        "title": "SportsMetrics: Blending Text and Numerical Data to Understand Information Fusion in LLMs",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.17.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.18",
+        "title": "SciMON: Scientific Inspiration Machines Optimized for Novelty",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.18.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.19",
+        "title": "Expedited Training of Visual Conditioned Language Generation via Redundancy Reduction",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.19.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.20",
+        "title": "Confidence Under the Hood: An Investigation into the Confidence-Probability Alignment in Large Language Models",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.20.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.21",
+        "title": "Retrieval-Augmented Multilingual Knowledge Editing",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.21.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.22",
+        "title": "Picturing Ambiguity: A Visual Twist on the Winograd Schema Challenge",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.22.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.23",
+        "title": "Subtle Biases Need Subtler Measures: Dual Metrics for Evaluating Representative and Affinity Bias in Large Language Models",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.23.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.24",
+        "title": "Framing in the Presence of Supporting Data: A Case Study in U.S. Economic News",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.24.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.25",
+        "title": "Mementos: A Comprehensive Benchmark for Multimodal Large Language Model Reasoning over Image Sequences",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.25.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.26",
+        "title": "TTM-RE: Memory-Augmented Document-Level Relation Extraction",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.26.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.27",
+        "title": "Answer is All You Need: Instruction-following Text Embedding via Answering the Question",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.27.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.28",
+        "title": "Explore Spurious Correlations at the Concept Level in Language Models for Text Classification",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.28.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.29",
+        "title": "Every Answer Matters: Evaluating Commonsense with Probabilistic Measures",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.29.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.30",
+        "title": "GradSafe: Detecting Jailbreak Prompts for LLMs via Safety-Critical Gradient Analysis",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.30.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.31",
+        "title": "Pouring Your Heart Out: Investigating the Role of Figurative Language in Online Expressions of Empathy",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.31.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.32",
+        "title": "An Information-Theoretic Approach to Analyze NLP Classification Tasks",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.32.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.33",
+        "title": "Can Your Model Tell a Negation from an Implicature? Unravelling Challenges With Intent Encoders",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.33.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.34",
+        "title": "Wav2Gloss: Generating Interlinear Glossed Text from Speech",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.34.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.35",
+        "title": "Leveraging Codebook Knowledge with NLI and ChatGPT for Zero-Shot Political Relation Classification",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.35.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.36",
+        "title": "SPOR: A Comprehensive and Practical Evaluation Method for Compositional Generalization in Data-to-Text Generation",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.36.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.37",
+        "title": "OPEx: A Component-Wise Analysis of LLM-Centric Agents in Embodied Instruction Following",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.37.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.38",
+        "title": "Multimodal Instruction Tuning with Conditional Mixture of LoRA",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.38.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.39",
+        "title": "DocLens: Multi-aspect Fine-grained Evaluation for Medical Text Generation",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.39.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.40",
+        "title": "FOFO: A Benchmark to Evaluate LLMs’ Format-Following Capability",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.40.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.41",
+        "title": "Hyper-CL: Conditioning Sentence Representations with Hypernetworks",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.41.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.42",
+        "title": "Analysis of Multi-Source Language Training in Cross-Lingual Transfer",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.42.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.43",
+        "title": "ABEX: Data Augmentation for Low-Resource NLU via Expanding Abstract Descriptions",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.43.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.44",
+        "title": "The Belebele Benchmark: a Parallel Reading Comprehension Dataset in 122 Language Variants",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.44.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.45",
+        "title": "Learn from Failure: Fine-tuning LLMs with Trial-and-Error Data for Intuitionistic Propositional Logic Proving",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.45.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.46",
+        "title": "Interactive Text-to-Image Retrieval with Large Language Models: A Plug-and-Play Approach",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.46.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.47",
+        "title": "IMBUE: Improving Interpersonal Effectiveness through Simulation and Just-in-time Feedback with Human-Language Model Interaction",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.47.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.48",
+        "title": "Token-wise Influential Training Data Retrieval for Large Language Models",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.48.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.49",
+        "title": "Tree-of-Counterfactual Prompting for Zero-Shot Stance Detection",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.49.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.50",
+        "title": "VisualWebArena: Evaluating Multimodal Agents on Realistic Visual Web Tasks",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.50.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.51",
+        "title": "FineSurE: Fine-grained Summarization Evaluation using LLMs",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.51.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.52",
+        "title": "Tuning Large Multimodal Models for Videos using Reinforcement Learning from AI Feedback",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.52.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.53",
+        "title": "Prompt Refinement with Image Pivot for Text-to-Image Generation",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.53.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.54",
+        "title": "Striking Gold in Advertising: Standardization and Exploration of Ad Text Generation",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.54.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.55",
+        "title": "AbsInstruct: Eliciting Abstraction Ability from LLMs through Explanation Tuning with Plausibility Estimation",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.55.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.56",
+        "title": "Reflect-RL: Two-Player Online RL Fine-Tuning for LMs",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.56.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.57",
+        "title": "Can ChatGPT’s Performance be Improved on Verb Metaphor Detection Tasks? Bootstrapping and Combining Tacit Knowledge",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.57.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.58",
+        "title": "Self-Distillation Bridges Distribution Gap in Language Model Fine-Tuning",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.58.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.59",
+        "title": "An Information Bottleneck Perspective for Effective Noise Filtering on Retrieval-Augmented Generation",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.59.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.60",
+        "title": "RORA: Robust Free-Text Rationale Evaluation",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.60.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.61",
+        "title": "Tell Me More! Towards Implicit User Intention Understanding of Language Model Driven Agents",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.61.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.62",
+        "title": "InstructProtein: Aligning Human and Protein Language via Knowledge Instruction",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.62.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.63",
+        "title": "ConSiDERS-The-Human Evaluation Framework: Rethinking Human Evaluation for Generative Large Language Models",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.63.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.64",
+        "title": "Linguistically Conditioned Semantic Textual Similarity",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.64.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.65",
+        "title": "Navigate through Enigmatic Labyrinth A Survey of Chain of Thought Reasoning: Advances, Frontiers and Future",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.65.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.66",
+        "title": "TimeBench: A Comprehensive Evaluation of Temporal Reasoning Abilities in Large Language Models",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.66.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.67",
+        "title": "BeamAggR: Beam Aggregation Reasoning over Multi-source Knowledge for Multi-hop Question Answering",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.67.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.68",
+        "title": "ANALOGYKB: Unlocking Analogical Reasoning of Language Models with A Million-scale Knowledge Base",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.68.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.69",
+        "title": "TaSL: Continual Dialog State Tracking via Task Skill Localization and Consolidation",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.69.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.70",
+        "title": "DeepSeekMoE: Towards Ultimate Expert Specialization in Mixture-of-Experts Language Models",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.70.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.71",
+        "title": "Grounding Language Model with Chunking-Free In-Context Retrieval",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.71.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.72",
+        "title": "Advancing Abductive Reasoning in Knowledge Graphs through Complex Logical Hypothesis Generation",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.72.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.73",
+        "title": "Active Prompting with Chain-of-Thought for Large Language Models",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.73.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.74",
+        "title": "EasyGen: Easing Multimodal Generation with BiDiffuser and LLMs",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.74.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.75",
+        "title": "Rewriting the Code: A Simple Method for Large Language Model Augmented Code Search",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.75.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.76",
+        "title": "A Multidimensional Framework for Evaluating Lexical Semantic Change with Social Science Applications",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.76.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.77",
+        "title": "Mitigating Catastrophic Forgetting in Large Language Models with Self-Synthesized Rehearsal",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.77.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.78",
+        "title": "Enhancing Large Language Models in Coding Through Multi-Perspective Self-Consistency",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.78.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.79",
+        "title": "Citation-Enhanced Generation for LLM-based Chatbots",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.79.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.80",
+        "title": "Transitive Consistency Constrained Learning for Entity-to-Entity Stance Detection",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.80.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.81",
+        "title": "Feature-Adaptive and Data-Scalable In-Context Learning",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.81.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.82",
+        "title": "Probing the Multi-turn Planning Capabilities of LLMs via 20 Question Games",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.82.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.83",
+        "title": "WaterBench: Towards Holistic Evaluation of Watermarks for Large Language Models",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.83.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.84",
+        "title": "Dependency Transformer Grammars: Integrating Dependency Structures into Transformer Language Models",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.84.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.85",
+        "title": "A Non-autoregressive Generation Framework for End-to-End Simultaneous Speech-to-Any Translation",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.85.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.86",
+        "title": "Probing Language Models for Pre-training Data Detection",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.86.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.87",
+        "title": "Analyzing Temporal Complex Events with Large Language Models? A Benchmark towards Temporal, Long Context Understanding",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.87.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.88",
+        "title": "IBSEN: Director-Actor Agent Collaboration for Controllable and Interactive Drama Script Generation",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.88.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.89",
+        "title": "Language Model Adaption for Reinforcement Learning with Natural Language Action Space",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.89.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.90",
+        "title": "Evaluating Intention Detection Capability of Large Language Models in Persuasive Dialogues",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.90.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.91",
+        "title": "LongLLMLingua: Accelerating and Enhancing LLMs in Long Context Scenarios via Prompt Compression",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.91.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.92",
+        "title": "Persuading across Diverse Domains: a Dataset and Persuasion Large Language Model",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.92.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.93",
+        "title": "HealMe: Harnessing Cognitive Reframing in Large Language Models for Psychotherapy",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.93.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.94",
+        "title": "Multimodal Prompt Learning with Missing Modalities for Sentiment Analysis and Emotion Recognition",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.94.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.95",
+        "title": "An Effective Pronunciation Assessment Approach Leveraging Hierarchical Transformers and Pre-training Strategies",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.95.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.96",
+        "title": "Detection-Correction Structure via General Language Model for Grammatical Error Correction",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.96.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.97",
+        "title": "Generative Pre-trained Speech Language Model with Efficient Hierarchical Transformer",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.97.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.98",
+        "title": "Selene: Pioneering Automated Proof in Software Verification",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.98.pdf",
+        "venue": "acl-long"
+    },
+    {
+        "id": "2024.acl-long.99",
+        "title": "Dissecting Human and LLM Preferences",
+        "year": "2024",
+        "source_link": "https://aclanthology.org/2024.acl-long.99.pdf",
+        "venue": "acl-long"
+    }
+]

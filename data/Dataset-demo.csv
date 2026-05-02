@@ -1,0 +1,395 @@
+﻿Number,ID,Attack_Type_1,Attack_Type_2,Attack_Type_3,Source_Link,Image number,Image_Type,Visual_Context,Adversarial_Prompt,Victim_Illusion,Ground_Truth,Logic_Steps,GPT5_Response,Gemini_Response,ClaudeSonnet4.6_Response,Failure_Reason,Metadata_JSON
+1,HML_1,Visual Anchor Chain (Chuỗi neo thị giác),,,https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11364256,1,Evolutionary Tree / Taxonomy,"Sơ đồ cây tiến hóa (Evolutionary Tree) của các phương pháp PEFT từ năm 2019 đến 2023+. Trục tung là thời gian, trục hoành chia thành 5 nhánh phân loại với màu sắc khác nhau (Xanh lá, Tím, Cam, Hồng, Xanh dương). Các phương pháp (Node) được nối với nhau bằng các đường cong phức tạp vắt chéo qua các mốc thời gian để thể hiện sự kế thừa.","Dựa vào sơ đồ, hãy tìm node có tên ""BitFit"" nằm ở nhánh Partial Fine-tuning (màu xanh dương). Lần theo đường liên kết trực tiếp duy nhất hướng lên trên để tìm node con của nó (gọi là Node 1). Tiếp tục từ Node 1, lần theo đường liên kết hướng lên trên để tìm node con tiếp theo (gọi là Node 2). Phần chính giữa của Node 2 này nằm đè lên một đường đứt nét nằm ngang biểu thị năm. Hãy dóng theo đường đứt nét đó sang tận cùng bên trái, node nào thuộc nhánh Additive Fine-tuning (màu xanh lá) cũng nằm đè chính xác lên đường đứt nét này?",N/A,Prefix-tuning,"Tìm BitFit (xanh dương, dưới 2022).
+
+Đi lên theo luồng -> gặp Child tuning (Node 1).
+
+Đi lên tiếp -> gặp FISH Mask (Node 2).
+
+Xác định vị trí Node 2
+
+Dóng FISH Mask sang. Node duy nhất bị đường 2022 cắt ngang qua tâm là Prefix-tuning.","Ta lần theo các bước trên sơ đồ:
+
+1️⃣ Tìm BitFit
+Node BitFit nằm trong nhánh Partial Fine-tuning (màu xanh dương) quanh mốc 2021.
+
+2️⃣ Đi lên node con trực tiếp (Node 1)
+Từ BitFit, đường liên kết hướng lên duy nhất dẫn tới:
+Child-Tuning
+
+➡ Đây là Node 1.
+
+3️⃣ Đi tiếp lên node con tiếp theo (Node 2)
+Từ Child-Tuning, tiếp tục theo đường liên kết hướng lên tới:
+FISH Mask
+
+➡ Đây là Node 2.
+
+4️⃣ Dóng theo đường đứt nét năm
+Node FISH Mask nằm đè lên một đường đứt nét ngang biểu thị năm.
+Dóng theo đường đứt nét này sang tận cùng bên trái tới nhánh Additive Fine-tuning (màu xanh lá).
+
+Node xanh lá nằm đúng trên cùng đường đứt nét đó là:
+
+P-Tuning v2
+
+✅ Kết luận:
+Node cần tìm là P-Tuning v2.",,,Visual Miss (Lỗi trích xuất thị giác),
+2,HML_2,Constraint Satisfaction (Thỏa mãn ràng buộc),Negative Space Logic (Logic vùng trống),,https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11364256,1,Evolutionary Tree / Taxonomy,"Sơ đồ cây tiến hóa (Evolutionary Tree) của các phương pháp PEFT từ năm 2019 đến 2023+. Trục tung là thời gian, trục hoành chia thành 5 nhánh phân loại với màu sắc khác nhau (Xanh lá, Tím, Cam, Hồng, Xanh dương). Các phương pháp (Node) được nối với nhau bằng các đường cong phức tạp vắt chéo qua các mốc thời gian để thể hiện sự kế thừa.","Dựa vào sơ đồ, hãy tìm một phương pháp (node) duy nhất thỏa mãn ĐỒNG THỜI cả 3 điều kiện khắt khe sau: Nằm trong nhánh ""Reparameterized Fine-tuning"" (các node màu cam nhạt). Được công bố trong khoảng thời gian từ sau năm 2022 đến trước năm 2023 (vị trí node nằm lọt thỏm giữa hai đường kẻ đứt nét 2022 và 2023). Là ""phương pháp tiền đề"" cho chính xác 2 phương pháp khác (Nghĩa là: Có đúng 2 mũi tên trực tiếp xuất phát từ node đó và chỉ đi nơi khác). Tên của node thỏa mãn cả 3 điều kiện này là gì?",N/A,Ground_Truth: Không có phương pháp nào thỏa mãn (None).,"Lọc nhánh: Chọn khu vực nhánh màu cam nhạt ở giữa.
+
+Lọc thời gian (2022 - 2023): Dóng đường đứt nét 2022 và 2023 sang ngang. Các ứng viên nằm trọn vẹn trong khoảng này bao gồm: Kernel-mix-lite(qvo), KronA, LoRA, AdaLoRA, DyLoRA, IncreLoRA. (Ghi chú: QLoRA và Delta-LoRA đã vượt quá vạch 2023 nên bị loại).
+
+Lọc điều kiện mũi tên (Đúng 2 mũi tên đi ra):
+
+Kernel-mix-lite(qvo): Không có mũi tên đi ra (0).
+
+KronA: Không có mũi tên đi ra (0).
+
+LoRA: Có nhiều hơn 2 mũi tên/đường nhánh đi ra từ nó (Loại).
+
+AdaLoRA: Chỉ nằm trên nhánh chính, không có mũi tên riêng lẻ xuất phát từ nó (0).
+
+DyLoRA: Có 1 mũi tên ngắn hướng lên, độc lập với IncreLoRA (1).
+
+IncreLoRA: Có 1 mũi tên hướng thẳng lên trên (1).
+
+Kết luận: Trải qua 3 màng lọc, toàn bộ danh sách ứng viên đều rơi rụng. Không có node nào thỏa mãn.","Ta kiểm tra lần lượt 3 điều kiện trên sơ đồ.
+
+1️⃣ Điều kiện 1: Thuộc nhánh Reparameterized Fine-tuning
+
+Đây là các node màu cam nhạt ở phần giữa sơ đồ.
+Một số node trong khu vực này gồm: LoRA, Delta-LoRA, LoRAPrune, IncreLoRA, AdaLoRA, DyLoRA, QLoRA…
+
+2️⃣ Điều kiện 2: Nằm giữa hai mốc năm 2022 và 2023
+
+Các node nằm giữa hai đường đứt nét 2022 và 2023 trong nhánh màu cam gồm:
+
+Delta-LoRA
+
+LoRAPrune
+
+IncreLoRA
+
+AdaLoRA
+
+DyLoRA
+
+3️⃣ Điều kiện 3: Có đúng 2 mũi tên đi ra (2 phương pháp kế thừa trực tiếp)
+
+Quan sát các node trên:
+
+LoRAPrune → không có 2 nhánh con rõ ràng
+
+IncreLoRA → chỉ có 1 hướng kế thừa
+
+AdaLoRA → chỉ dẫn lên 1 phương pháp
+
+DyLoRA → không tách thành 2 nhánh
+
+Riêng Delta-LoRA có chính xác 2 mũi tên đi lên dẫn tới:
+
+LoRAPrune
+
+IncreLoRA
+
+✅ Kết luận
+
+Phương pháp thỏa đồng thời cả 3 điều kiện là:
+
+Delta-LoRA.",,,Visual Miss (Lỗi trích xuất thị giác),
+3,HML_3,Visual Anchor Chain (Chuỗi neo thị giác),,,https://www.sciencedirect.com/science/article/pii/S0010482526001642?ref=cra_js_challenge&fr=RR-1,2,System Architecture,"Sơ đồ luồng PRISMA-ScR minh họa quy trình lựa chọn bài báo cho bài tổng quan phạm vi tài liệu hiện tại. Các tiêu chí loại trừ đã được áp dụng đối với các bài báo không bao gồm phân tích Học máy (ML), Học sâu (DL), Mô hình hỗn hợp (MM) hoặc Mô hình phân cấp (HM), cũng như đối với các nghiên cứu giải quyết các khía cạnh lâm sàng khác hoặc thiếu nhiệm vụ dự báo hoặc xây dựng mô hình. Các bài báo tổng quan cũng bị loại trừ.",mất bao nhiêu bước để đi từ giai đoạn Identification đến bước xử lý ở góc dưới ngoài cùng bên phải?,N/A,8 (nếu tính theo bước) hoặc 7 (nếu tính theo số mũi tên),"1. Bắt đầu từ ô record identified fro dataset: n =. 83 + 59 + 93 = 235
+
+2. Lọc các bài báo ở bước record remove from screening: n := n - 114
+
+3. Record screen: n = 221
+
+4. Loại trừ các bài báo ở bước record excluded: n := n - 45
+
+5. Report sought for retrievel: n = 176
+
+6. Report not retrievel: n := n - 0
+
+7. Report assessed for eligibility: n = 176
+
+8. Report excluded (đích dến)","Ô ở góc dưới bên phải là: “Reports excluded” (các bài bị loại sau khi đánh giá toàn văn).
+Nếu đi theo luồng từ giai đoạn Identification đến ô này, ta đi qua các bước sau:
+Records identified from databases
+(Scopus, PubMed, Web of Science)
+Records removed before screening
+(loại duplicate records)
+Records screened
+Reports sought for retrieval
+Reports assessed for eligibility
+Reports excluded (ô góc dưới bên phải)
+Kết luận
+Có 5 bước chuyển (5 arrows) từ giai đoạn Identification đến ô Reports excluded.
+Nếu tính cả điểm bắt đầu và điểm kết thúc thì tổng cộng 6 hộp (steps) trong chuỗi.",,,Reasoning/Math Error (Lỗi suy luận và Toán học),
+4,HML_4,Iterative Counter-factual (Giả định chồng lớp),Constraint Satisfaction (Thỏa mãn ràng buộc),Visual Anchor Chain (Chuỗi neo thị giác),https://onlinelibrary.wiley.com/doi/epdf/10.1002/qub2.70014,1,Network Topology,"Các ứng dụng của phương pháp LLM trong Tin sinh học
+","Trong 2 mức độ sinh học có tổng số phương pháp LLM ứng dụng được là 10, những kiểu dữ liệu và đa phương thức nào được mô tả trong các ô đó.",N/A,"2 mức độ sinh học: Genomic-scale level; Cellular level
+
+Các loại dữ liệu và đa phương thức có trong 2 mức độ sinh học trên: 
+Bio-sequence: Chuỗi sinh học (hình mũi tên vàng).
+
+3D structure: Cấu trúc 3D (hình khối lập phương hồng).
+
+Graphs & networks: Đồ thị và mạng lưới (hình các nút xanh nối nhau).
+
+Functions: Chức năng (hình dấu cộng đỏ).
+
+Variation/mutation: Biến thể/đột biến (hình các vạch đen).
+
+Bio-text: Văn bản sinh học (hình tờ giấy).
+
+Bio-markers: Chỉ dấu sinh học (hình ống nghiệm).
+
+Images: Hình ảnh (hình bức tranh phong cảnh).","1. Đếm số cạnh nối tới Methodology of LLMs từng node biology level (n)
+
+2. Xét xe cặp nào có tổng n = 10
+
+3. Đối chiếu kí các kí hiệu được liệt kê trong 2 node và liệt kê ra thành danh sách.","Trong hình, mỗi mức độ sinh học được minh họa bằng các biểu tượng đại diện cho kiểu dữ liệu sinh học và dữ liệu đa phương thức. Khi đếm số biểu tượng trong từng ô, ta thấy:
+Molecular level có 3 kiểu dữ liệu.
+Genomic-scale level có 7 kiểu dữ liệu.
+Hai mức này có tổng cộng 3 + 7 = 10, đúng với yêu cầu của câu hỏi.
+Ở molecular level, các kiểu dữ liệu được mô tả gồm:
+Bio-sequence (trình tự sinh học như DNA, RNA, protein)
+3D structure (cấu trúc không gian ba chiều của phân tử)
+Variation / mutation (biến thể hoặc đột biến)
+Ở genomic-scale level, các kiểu dữ liệu gồm:
+Bio-sequence
+3D structure
+Graphs & networks (đồ thị và mạng lưới sinh học)
+Functions (chức năng sinh học)
+Variation / mutation
+Bio-text (văn bản sinh học như chú thích gene, bài báo khoa học)
+Bio-markers (dấu ấn sinh học)
+Như vậy, các kiểu dữ liệu và đa phương thức xuất hiện trong hai mức sinh học này bao gồm: bio-sequence, 3D structure, variation/mutation, graphs & networks, functions, bio-text và bio-markers.","Dựa trên hình ảnh bạn cung cấp, chúng ta sẽ xác định 2 mức độ sinh học có tổng số phương pháp LLM (các đường nối màu tím) bằng 10, sau đó liệt kê các kiểu dữ liệu tương ứng.
+
+1. Xác định 2 mức độ sinh học
+
+Dựa vào các đường nối từ cột A (Methodology of LLMs) sang cột B (Various biology levels):
+
+Molecular level: Có 3 đường nối.
+
+Genomic-scale level: Có 5 đường nối.
+
+Cellular level: Có 5 đường nối.
+
+Tissue/organs: Có 4 đường nối.
+
+Population/community/metagenomics: Có 3 đường nối.
+
+Như vậy, hai mức độ có tổng số phương pháp ứng dụng bằng 10 (5+5=10) là: Genomic-scale level và Cellular level.
+
+2. Kiểu dữ liệu và đa phương thức trong 2 mức độ này
+
+Dưới đây là các icon dữ liệu xuất hiện trong hai ô đó, đối chiếu với chú thích ở phần cuối hình ảnh:
+
+Mức độ Genomic-scale level:
+
+Bio-sequence: Chuỗi sinh học (hình mũi tên vàng).
+
+3D structure: Cấu trúc 3D (hình khối lập phương hồng).
+
+Graphs & networks: Đồ thị và mạng lưới (hình các nút xanh nối nhau).
+
+Functions: Chức năng (hình dấu cộng đỏ).
+
+Variation/mutation: Biến thể/đột biến (hình các vạch đen).
+
+Bio-text: Văn bản sinh học (hình tờ giấy).
+
+Bio-markers: Chỉ dấu sinh học (hình ống nghiệm).
+
+Mức độ Cellular level:
+
+3D structure: Cấu trúc 3D.
+
+Graphs & networks: Đồ thị và mạng lưới.
+
+Functions: Chức năng.
+
+Images: Hình ảnh (hình bức tranh phong cảnh).
+
+Bio-markers: Chỉ dấu sinh học.","Phân tích các mức độ sinh học có tổng 10 phương pháp LLM
+Đầu tiên, đếm số mũi tên kết nối từ cột A vào từng mức độ sinh học ở cột B:
+
+Molecular level: 3 phương pháp
+Genomic-scale level: 5 phương pháp
+Cellular level: 4 phương pháp
+Tissue/organs: 5 phương pháp
+Population/community/metagenomics: 3 phương pháp
+
+Như vậy, Genomic-scale level (5) + Tissue/organs (5) = 10 là cặp 2 mức độ thỏa mãn điều kiện.
+
+Kiểu dữ liệu trong từng ô
+Genomic-scale level sử dụng 7 kiểu dữ liệu gồm: Bio-sequence, 3D structure, Graphs & networks, Functions, Variation/mutation, Bio-text và Bio-markers.
+Tissue/organs sử dụng 6 kiểu dữ liệu gồm: Graphs & networks, Bio-text, Functions, Images, Bio-markers và Phenotypes.
+
+Nhận xét
+Hai mức độ này có một số kiểu dữ liệu chung là Graphs & networks, Bio-text, Functions và Bio-markers. Tuy nhiên, Genomic-scale level có thêm Bio-sequence, 3D structure và Variation/mutation — phù hợp với đặc thù phân tích trình tự và biến thể gene. Trong khi đó, Tissue/organs bổ sung thêm Images và Phenotypes — phản ánh nhu cầu phân tích hình ảnh mô và biểu hiện kiểu hình ở cấp độ mô/cơ quan.",Reasoning/Math Error (Lỗi suy luận và Toán học),
+5,HML_5,Constraint Satisfaction (Thỏa mãn ràng buộc),Negative Space Logic (Logic vùng trống),,https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11364256,3,Evolutionary Tree / Taxonomy,"Visual_Context: Sơ đồ kiến trúc (Fig. 3) của ba phương pháp PEFT: Sequential Adapter, Prefix-tuning, và LoRA. Bức ảnh có cấu trúc đa tầng, bao gồm 3 luồng chính được gắn nhãn (a), (b), (c), các hộp block chứa tên thành phần (như Layer Normalization, Feed-Forward Network) và các ký hiệu toán học $\oplus$ (biểu tượng hình tròn chứa dấu cộng) và $*$ (biểu tượng hình ngôi sao) được nối với nhau bằng các mũi tên luồng dữ liệu.","Dựa vào sơ đồ kiến trúc ở Hình 3, hãy thực hiện một nhiệm vụ tìm kiếm phức tạp. Nhiệm vụ của bạn là xác định tên của một khối block (component) được dán nhãn đầy đủ thỏa mãn ĐỒNG THỜI cả 3 điều kiện khắt khe sau:Khối block đó phải xuất hiện chính xác hai lần trong toàn bộ hình ảnh, và ở hai khung hình kiến trúc (a), (b) hoặc (c) khác nhau.Trong khung hình kiến trúc đầu tiên mà nó xuất hiện, đầu vào của nó phải kết nối trực tiếp (bằng một mũi tên) từ một biểu tượng toán học $\oplus$.Trong khung hình kiến trúc thứ hai mà nó xuất hiện, đầu ra của nó phải kết nối trực tiếp (bằng một mũi tên) đến biểu tượng toán học hình ngôi sao (*).Tên của khối block đó là gì?",N/A,"Ground_Truth: None (hoặc ""Không có phương pháp nào thỏa mãn"").","Lọc điều kiện 1 (Đếm tần suất): Quét toàn bộ hình để lập danh sách các khối block có nhãn.
+
+""Multi-Head Attention"": Xuất hiện 2 lần (1 ở (a), 1 ở (b)).
+
+""Feed-Forward Network"": Xuất hiện 2 lần (1 ở (a), 1 ở (b)).
+
+""Layer Normalization"": Xuất hiện 4 lần.
+
+Các khối trong call-out của (a) và (c) (Sequential Adapter, Nonlinear Activation, Up/Down-projection): Chỉ xuất hiện 1 lần trong call-out của khung hình đó.
+
+Kết luận: Chỉ có ""Multi-Head Attention"" và ""Feed-Forward Network"" là ứng viên thỏa mãn điều kiện ""xuất hiện chính xác hai lần"" và có ngữ cảnh khác nhau.
+
+Kiểm tra ""Multi-Head Attention"":
+
+Chỉ có 1 trong 2 nối với dấu (+)
+
+Kiểm tra ""Feed-Forward Network"":
+
+Chỉ có 1 trong 2 nối với dấu (+)
+
+Kiểm tra bẫy không gian: Kiểm tra tất cả các khối block khác, bao gồm cả các khối trong các call-out của call-out (Query, Key, Value, Attention, Hidden States). Chúng chỉ xuất hiện 1 lần trong call-out tương ứng.
+
+Kết luận: Trải qua việc quét toàn bộ biểu đồ và đếm tần suất, không có bất kỳ khối block có nhãn nào thỏa mãn điều kiện số 1, do đó không cần kiểm tra điều kiện 2 và 3.","Phân tích theo từng điều kiện
+
+1️⃣ Xuất hiện chính xác hai lần trong toàn bộ hình và ở hai kiến trúc khác nhau
+
+Khối Down-projection (W_down) xuất hiện ở:
+
+(a) Sequential Adapter  
+(c) LoRA  
+
+Không xuất hiện trong (b) Prefix-tuning.
+
+➡️ Tổng cộng 2 lần, đúng yêu cầu.
+
+2️⃣ Lần xuất hiện thứ nhất: đầu vào đến trực tiếp từ biểu tượng ⊕
+
+Trong kiến trúc (a) Sequential Adapter:
+
+Luồng là:
+
+⊕  →  Down-projection W_down  →  Nonlinear Activation  →  Up-projection W_up
+
+Biểu tượng ⊕ là phép residual addition.
+
+Mũi tên từ ⊕ đi trực tiếp vào Down-projection (W_down).
+
+➡️ Điều kiện được thỏa mãn.
+
+3️⃣ Lần xuất hiện thứ hai: đầu ra đi trực tiếp đến biểu tượng *
+
+Trong kiến trúc (c) LoRA:
+
+Phần LoRA nhỏ phía dưới có luồng:
+
+Down-projection W_down  →  *  →  Up-projection W_up
+
+Dấu * biểu thị phép nhân ma trận.
+
+Mũi tên từ Down-projection (W_down) đi trực tiếp đến dấu *.
+
+➡️ Điều kiện được thỏa mãn.",,,Visual Miss (Lỗi trích xuất thị giác),
+6,HML_6,,,,https://arxiv.org/pdf/2603.05495,9,Bar Chart,"Ngân sách thời gian xử lý ngoại tuyến (offline time budget) trong tối ưu hóa tổng hợp (synthetic optimization). Học có giám sát thuần túy (Pure SL) bị chi phối bởi chi phí rất lớn của việc tạo nhãn, trong khi học bán giám sát dựa trên hàm phạt (penalty-based SSL) tránh việc cần nhãn nhưng đòi hỏi thời gian huấn luyện dài hơn. Phương pháp của chúng tôi chỉ sử dụng một số lượng nhỏ nhãn có chi phí thấp, từ đó giảm đáng kể chi phí gán nhãn và tăng tốc quá trình hội tụ của SSL, đồng thời đạt được chất lượng nghiệm tương đương hoặc tốt hơn với tổng thời gian xử lý ngoại tuyến thấp hơn nhiều bậc độ lớn. ","Trong các phương pháp tốn thời gian huấn luyện có giám sát, phương pháp nào có thời gian huấn luyện giám sát nhỏ nhất?",N/A,Supervised,Cột Supervised có một nét màu xanh ở ngoài cùng bên phải. Đó là thời gian dành ra cho học có giám sát.,"Trong biểu đồ, phần màu xanh dương biểu thị thời gian huấn luyện có giám sát (supervised learning).
+Các phương pháp có phần huấn luyện giám sát gồm:
+Our Penalty (800; 0.5)
+Our FSNet (800; 0.5)
+
+Quan sát độ dài thanh màu xanh dương:
+Our Penalty (800; 0.5) → phần xanh dương ngắn nhất
+Our FSNet (800; 0.5) → dài hơn một chút
+✅ Kết luận:
+Phương pháp có thời gian huấn luyện giám sát nhỏ nhất là:
+Our Penalty (800; 0.5).","Dựa trên biểu đồ bạn cung cấp về ngân sách thời gian xử lý ngoại tuyến (offline time budget), chúng ta có thể phân tích thời gian huấn luyện có giám sát (phần màu xanh dương - supervised learning (s)) như sau:
+
+Trong số các phương pháp có sử dụng thời gian huấn luyện có giám sát (tức là những thanh có xuất hiện đoạn màu xanh dương), phương pháp có thời gian nhỏ nhất là:
+
+Our Penalty (800; 0.5)
+
+Phân tích chi tiết:
+
+Supervised (7k; 10.0): Đây là phương pháp tốn nhiều thời gian nhất, bị chiếm trọn bởi việc tạo nhãn (màu cam) và một phần nhỏ huấn luyện có giám sát ở cuối thanh.
+
+Our Penalty (800; 0.5): Có một đoạn màu xanh dương rất ngắn.
+
+Our FSNet (800; 0.5): Có đoạn màu xanh dương dài hơn một chút so với ""Our Penalty"".
+
+Penalty và FSNet (nguyên bản): Hai phương pháp này hoàn toàn là học tự giám sát (màu xanh lá cây) nên không có thời gian huấn luyện có giám sát.","Dựa vào biểu đồ, trong các phương pháp có sử dụng supervised learning (màu xanh dương):
+
+Supervised (7k; 10.0): Không có phần supervised learning riêng — toàn bộ là label generation (màu cam)
+Our Penalty (800; 0.5): Có một phần nhỏ màu xanh dương (supervised learning)
+Our FSNet (800; 0.5): Có một phần nhỏ màu xanh dương (supervised learning)
+
+Cả Our Penalty (800; 0.5) và Our FSNet (800; 0.5) đều có phần supervised learning, và nhìn vào biểu đồ, hai phần xanh dương này có kích thước tương đương nhau và rất nhỏ.
+Tuy nhiên, nếu so sánh tổng thời gian và tỷ lệ phần xanh dương:
+➡️ Our Penalty (800; 0.5) có thời gian supervised learning nhỏ nhất (phần màu xanh dương chiếm tỷ lệ nhỏ hơn trong tổng 480s so với 935s của Our FSNet).",Visual Miss (Lỗi trích xuất thị giác),
+7,HML_7,Constraint Satisfaction (Thỏa mãn ràng buộc),,,https://arxiv.org/pdf/2603.05296,6,Line Chart,"Độ nhạy đối với α. Chúng tôi báo cáo tỉ lệ thành công của các phương pháp QC-MFQL, DSRL và LPS (phương pháp của chúng tôi) khi α thay đổi (được quét từ 0.01 đến 300) trên các nhiệm vụ mặc định đại diện được sử dụng để tinh chỉnh siêu tham số. 
+Các đường liền nét biểu thị tỉ lệ thành công trung bình, và các vùng được tô bóng thể hiện khoảng tin cậy 95%. ",Hãy ước lượng các giá trị alpha mà tại đó khoảng tin cậy của 2 phương pháp QC-MFQL và DSRL giao nhau. (Mỗi nhiệm vụ thực hiện ước lượng một lần).,N/A,"1. puzzle-3x3:
+alpha khoảng 10^(0.5)
+
+2. cube-double:
+alpha = 10^(-1) (được chấp nhận, không có cũng không sai)
+alpha khoảng 10^(1)
+alpha > 10^(2) đến giới hạn biểu diễn của trục hành trong hình
+
+3. scene:
+những vùng có đường nàu xanh đè lên khoảng tin vậy của đường màu cam
+alpha khoảng 10^(-0.5) - 10^(0)
+alpha khoảng 10^(0.5) - 10^(1)
+","Quan sát lần lượt các nhiệm vụ và nhận diện được sự giao nhau của 2 vùng tin cậy, sau đó gióng xuống để ước lượng alpha.","Tóm lại, các giá trị α mà khoảng tin cậy của QC-MFQL và DSRL giao nhau được ước lượng lần lượt là khoảng 3 cho puzzle-3x3, khoảng 0.1–0.3 cho cube-double, và khoảng 1 cho scene.","Dưới đây là phần tổng hợp lại các khoảng giá trị Alpha (α) ước lượng mà không sử dụng định dạng bảng, giúp bạn dễ dàng theo dõi theo từng nhiệm vụ:
+
+Ước lượng khoảng giao nhau của QC-MFQL và DSRL
+
+Nhiệm vụ puzzle-3x3:
+Sự giao thoa giữa hai vùng tin cậy xảy ra trong khoảng α từ 2.0 đến 4.0. Tại điểm này, phương pháp QC-MFQL có một sự tăng vọt về hiệu suất, khiến vùng bóng màu xanh dương chạm vào vùng bóng màu cam của DSRL trước khi giảm mạnh ở mốc 10^1
+
+Nhiệm vụ cube-double:
+Sự giao thoa diễn ra trên toàn bộ dải đo (từ 0.01 đến 300). Do hiệu suất của cả hai phương pháp đều ở mức thấp và vùng tin cậy của DSRL khá rộng, nó bao phủ hoàn toàn dải hoạt động của QC-MFQL trong suốt quá trình thay đổi Alpha.
+
+Nhiệm vụ scene:
+Khoảng giao nhau rõ rệt nhất nằm trong đoạn α từ 0.8 đến 4.0. Đây là giai đoạn QC-MFQL bứt phá mạnh mẽ, đạt tỉ lệ thành công cao nhất và ""cắt"" qua vùng hiệu suất ổn định nhưng thấp hơn của DSRL.","puzzle-3x3: Khoảng tin cậy của QC-MFQL và DSRL giao nhau trong vùng α ≈ 3 đến 7, khi đỉnh CI trên của QC-MFQL đủ cao để chạm CI dưới của DSRL.
+cube-double: Có hai vùng giao nhau — một vùng nhỏ ở α ≈ 0.05 đến 0.1, và một vùng rõ hơn ở α ≈ 1 đến 3, do cả hai phương pháp đều có giá trị thấp và CI mở rộng chồng lấp nhau.
+scene: Giao nhau tập trung quanh α ≈ 0.5 đến 2, trùng với đỉnh của QC-MFQL và vùng CI dưới của DSRL tại khu vực đó.",Visual Miss (Lỗi trích xuất thị giác),
+8,HML_8,Transitive Dependency Trap (Bẫy phụ thuộc bắc cầu),Visual Anchor Chain (Chuỗi neo thị giác),,https://arxiv.org/pdf/2507.20518,2,System Architecture,"Tổng quan về T2VParser của chúng tôi. (a) Minh họa quy trình xử lý và huấn luyện của T2VParser. Hình cho thấy cách Video Parser và Text Parser thu được các embedding đa góc nhìn (multiview embeddings) cho dữ liệu thuộc các phương thức khác nhau (modalities). Sau đó, các embedding này được căn chỉnh (align) thông qua Cơ chế Giao tiếp Kép (Dual Communication Mechanism)bằng cách trao đổi và thu nhận thông tin bổ sung giữa hai bên. (b) Trình bày chi tiết của Cơ chế Giao tiếp Kép. Mô-đun này nhằm tăng cường sự tương tác giữa các phương thức khác nhau và đánh giá một cách toàn diện độ tương đồng giữa các embedding đa góc nhìn của video và văn bản.","Từ f'_t đến S_t, dữ liệu phải trải qua bao nhiêu bước xử lý?",N/A,3 bước,"Hình (b)
+
+Bước 1: f'_t đóng vai trò là input Q_t để đi vào khối Cross-Attention
+
+Bước 2: Output của khối Cross-Attention được đưa vào xử lý ở khối Self-Attention tạo fa f_vx
+
+Bước 3: f_vx kết hợp với f'_t tạo thành S_t","Phân tích đường đi của dữ liệu từ f'_t đến S_t trong hình (b) – Dual Communication Mechanism
+Quan sát nhánh xử lý text ở bên phải của hình (b). Dữ liệu bắt đầu từ embedding f'_t và được xử lý theo thứ tự từ dưới lên trên.
+Bước 1: Cross-Attention
+Đầu vào: f'_t
+Embedding text f'_t được đưa vào lớp Cross-Attention.
+Ở bước này, text sẽ trao đổi thông tin với embedding của video.
+Cụ thể:
+Query: Q_t (từ text)
+Key và Value: K_v, V_v (từ video)
+→ Kết quả: embedding text được bổ sung thêm thông tin từ video.
+Bước 2: Self-Attention
+Output của Cross-Attention tiếp tục đi qua lớp Self-Attention.
+Mục đích của bước này là mô hình hóa quan hệ giữa các token trong văn bản sau khi đã nhận thông tin từ video.
+→ Kết quả của bước này là embedding mới ký hiệu f_tx.
+Bước 3: Tạo biểu diễn đa góc nhìn của text
+Embedding f_tx được tổng hợp để tạo thành ma trận biểu diễn đa góc nhìn của văn bản, ký hiệu S_t.
+✔ Kết luận
+Từ f'_t đến S_t, dữ liệu trải qua 3 bước xử lý chính:
+Cross-Attention
+Self-Attention
+Tổng hợp embedding để tạo biểu diễn đa góc nhìn S_t","Các bước xử lý từ f't đến St
+Dựa trên sơ đồ hình (b) Dual Communication Mechanism trong ảnh, luồng dữ liệu đi từ điểm bắt đầu f't (văn bản) đến ma trận St trải qua 3 bước xử lý chính sau đây:
+
+Bước 1 - Cross-Attention (Chú ý chéo): Dữ liệu từ f't được đưa vào lớp Cross-Attention. Tại đây, nó kết hợp với các giá trị (Kv, Vv) được truyền sang từ nhánh Video để học cách tương quan giữa hai phương thức.
+
+Bước 2 - Self-Attention (Tự chú ý): Kết quả sau khi chú ý chéo (ký hiệu là f_tx) tiếp tục đi qua lớp Self-Attention. Bước này giúp mô hình tự tính toán các mối quan hệ nội tại giữa các thành phần trong chính dữ liệu văn bản đó.
+
+Bước 3 - Dot Product (Tích vô hướng): Các vector đặc trưng sau khi qua lớp Self-Attention sẽ thực hiện phép nhân vô hướng (Dot Product) với các vector đặc trưng tương ứng từ phía video (f'v) để tạo ra ma trận tương đồng St.
+
+Kết luận: Dữ liệu phải trải qua tổng cộng 3 bước xử lý tuần tự để hình thành nên ma trận St.","Phân tích từ f'_t đến S_t
+Nhìn vào sơ đồ (b) Dual Communication Mechanism ở phía bên phải:
+Theo dõi luồng dữ liệu từ f'_t (input bên phải):
+
+Cross-Attention — f'_t đóng vai trò cung cấp K_t, V_t cho khối Cross-Attention (đồng thời nhận Q_v từ phía video)
+Self-Attention — kết quả qua tiếp khối Self-Attention → cho ra f_tx
+Dot Product với diag(S_t) — f_tx được dùng để tính toán ma trận tương đồng S_t thông qua phép nhân
+
+
+⚠️ Lưu ý: S_t không phải là output cuối cùng mà là ma trận đường chéo trọng số dùng trong bước Dot Product để tạo ra f̃_t",Visual Miss (Lỗi trích xuất thị giác),

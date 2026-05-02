@@ -1,0 +1,8 @@
+requests==2.31.0
+python-dotenv==1.0.0
+tenacity==8.2.3
+pandas==2.1.4
+litellm==1.35.29
+pydantic>=2.0.0
+
+#tai them pillow

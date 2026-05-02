@@ -1,0 +1,22 @@
+# 1. Bỏ qua Môi trường Ảo và Cache của Python
+venv/
+__pycache__/
+.env
+
+# 2. Bỏ qua Thông tin Mật khẩu & API Keys
+credentials/cs-blindspot-agent.json
+
+# 3. Bỏ qua Dữ liệu thô (Nặng và dễ phình to)
+data/pdfs/*
+data/raw_data/raw_images/*
+data/images/*
+
+# 4. Bỏ qua Dữ liệu JSON thay đổi liên tục (Tránh conflict git)
+data/raw_data/crawled_raw.json
+data/pipeline_results/*.json
+data/pipeline_results/*.jsonl
+data/pipeline_results/*.bak*
+
+# 5. Bỏ qua File kết quả cuối cùng (Chỉ commit file demo)
+Dataset.csv
+crawldata copy.py
